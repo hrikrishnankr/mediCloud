@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Helvetica', 'Verdana', sans-serif;
+    font-weight: 400;
+    font-display: optional;
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    background: #ececec;
+}
+
+
+/* Include this file in your html if you are using the CSP mode. */
+
+.ng-animate.item:not(.left):not(.right) {
+    -webkit-transition: 0s ease-in-out left;
+    transition: 0s ease-in-out left
+}
+
+.uib-datepicker .uib-title {
+    width: 100%;
+}
+
+.uib-day button,
+.uib-month button,
+.uib-year button {
+    min-width: 100%;
+}
+
+.uib-left,
+.uib-right {
+    width: 100%
+}
+
+.uib-position-measure {
+    display: block !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.uib-position-scrollbar-measure {
+    position: absolute !important;
+    top: -9999px !important;
+    width: 50px !important;
+    height: 50px !important;
+    overflow: scroll !important;
+}
+
+.uib-position-body-scrollbar-measure {
+    overflow: scroll !important;
+}
+
+.uib-datepicker-popup.dropdown-menu {
+    display: block;
+    float: none;
+    margin: 0;
+}
+
+.uib-button-bar {
+    padding: 10px 9px 2px;
+}
+
+[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,
+[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,
+[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,
+[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,
+[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,
+[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,
+[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,
+[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,
+[uib-popover-popup].popover.top-left > .arrow,
+[uib-popover-popup].popover.top-right > .arrow,
+[uib-popover-popup].popover.bottom-left > .arrow,
+[uib-popover-popup].popover.bottom-right > .arrow,
+[uib-popover-popup].popover.left-top > .arrow,
+[uib-popover-popup].popover.left-bottom > .arrow,
+[uib-popover-popup].popover.right-top > .arrow,
+[uib-popover-popup].popover.right-bottom > .arrow,
+[uib-popover-html-popup].popover.top-left > .arrow,
+[uib-popover-html-popup].popover.top-right > .arrow,
+[uib-popover-html-popup].popover.bottom-left > .arrow,
+[uib-popover-html-popup].popover.bottom-right > .arrow,
+[uib-popover-html-popup].popover.left-top > .arrow,
+[uib-popover-html-popup].popover.left-bottom > .arrow,
+[uib-popover-html-popup].popover.right-top > .arrow,
+[uib-popover-html-popup].popover.right-bottom > .arrow,
+[uib-popover-template-popup].popover.top-left > .arrow,
+[uib-popover-template-popup].popover.top-right > .arrow,
+[uib-popover-template-popup].popover.bottom-left > .arrow,
+[uib-popover-template-popup].popover.bottom-right > .arrow,
+[uib-popover-template-popup].popover.left-top > .arrow,
+[uib-popover-template-popup].popover.left-bottom > .arrow,
+[uib-popover-template-popup].popover.right-top > .arrow,
+[uib-popover-template-popup].popover.right-bottom > .arrow {
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin: 0;
+}
+
+[uib-popover-popup].popover,
+[uib-popover-html-popup].popover,
+[uib-popover-template-popup].popover {
+    display: block !important;
+}
+
+.uib-time input {
+    width: 50px;
+}
+
+[uib-typeahead-popup].dropdown-menu {
+    display: block;
+}
+
+.header {
+    width: 100%;
+    height: 56px;
+    color: #FFF;
+    background: #07ce7f;
+    position: fixed;
+    font-size: 20px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    padding: 16px 16px 0 16px;
+    will-change: transform;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-transition: -webkit-transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s;
+    transition: -webkit-transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s;
+    transition: transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s;
+    transition: transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s, -webkit-transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s;
+    z-index: 1000;
+}
+
+.header .headerButton {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    text-indent: -30000px;
+    overflow: hidden;
+    opacity: 0.54;
+    -webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+    transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.header #butRefresh {
+    background: url(/src/images/ic_refresh_white_24px.svg) center center no-repeat;
+}
+
+.header #butAdd {
+    background: url(/src/images/ic_add_white_24px.svg) center center no-repeat;
+}
+
+.header__title {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    bottom: 4px;
+}
+
+.header__title .name {
+    display: inline;
+    position: relative;
+    bottom: 13px;
+}
+
+.logo #spinner {
+    box-sizing: border-box;
+    stroke: #fff;
+    stroke-width: 15px;
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+}
+
+.loader {
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.loader #spinner {
+    box-sizing: border-box;
+    stroke: #07ce7f;
+    stroke-width: 15px;
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-animation: line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 1.6s linear infinite;
+    animation: line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 1.6s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(450deg);
+        transform: rotate(450deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(450deg);
+        transform: rotate(450deg);
+    }
+}
+
+@-webkit-keyframes line {
+    0% {
+        stroke-dasharray: 2, 85.964;
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    50% {
+        stroke-dasharray: 65.973, 21.9911;
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dasharray: 2, 85.964;
+        stroke-dashoffset: -65.973;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes line {
+    0% {
+        stroke-dasharray: 2, 85.964;
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    50% {
+        stroke-dasharray: 65.973, 21.9911;
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dasharray: 2, 85.964;
+        stroke-dashoffset: -65.973;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
