@@ -1,1 +1,9 @@
-<h1>List</h1>
+<div class="list-heading">
+	<h2>Wrold Wide Sotrage</h2>
+</div>
+
+<div class="card" ng-repeat="store in storage.storageSpace">
+	<div class="card-heading">{{store.name}}</div>
+	<div class="card-detail">Size : {{store.size}}</div>
+	<div class="card-detail">Region : {{store.region}}</div>
+</div>

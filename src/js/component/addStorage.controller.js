@@ -4,19 +4,25 @@
     angular.module('mediCloud.list')
         .controller('addStorageCtrl', addStorageCtrl);
 
-    function addStorageCtrl($uibModal, $scope) {
+    function addStorageCtrl($uibModal, $scope, $uibModalInstance) {
 
         /* private declarations */
         var vm = this;
 
         /* initialzations */
+        vm.storeData = {
+            name: "",
+            size: "",
+            region:""
+        };
 
         /* view-model methods (references) */
-        vm.addStorage = addStorage;
+        vm.add = add;
 
         /* private methods*/
-        function addStorage() {
-            
+        function add() {
+            console.log("add is clicked!");
+            $uibModalInstance.close(vm.storeData)
         }
 
     }
