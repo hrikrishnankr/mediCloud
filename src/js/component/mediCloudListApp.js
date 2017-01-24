@@ -15,7 +15,7 @@
             })
             .state('storage.list', {
                 url: '/list',
-                templateUrl: '../src/js/component/medi-cloud-list.html',
+                templateUrl: './src/js/component/medi-cloud-list.html',
                 controller: 'medicloudListCtrl',
                 controllerAs: 'storage'
             });
