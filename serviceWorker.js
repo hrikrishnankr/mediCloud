@@ -16,7 +16,9 @@ var filesToCache = [
   '/src/js/app.js',
   '/src/js/component/mediCloudListApp.js',
   '/src/js/component/mediCloudList.controller.js',
-  '/src/js/component/addStorage.controller.js'
+  '/src/js/component/addStorage.controller.js',
+  '/src/js/component/add-storage.html',
+  '/src/js/component/medi-cloud-list.html',
 ];
 
 self.addEventListener('install', function(e) {
