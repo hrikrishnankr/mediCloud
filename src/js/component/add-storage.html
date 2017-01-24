@@ -5,22 +5,27 @@
         </button>
         <h4 class="modal-title" id="myModalLabel">Add Storage</h4>
     </div>
-    <div class="modal-body color-black">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Name</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name" ng-model="store.storeData.name">
+    <form name="storeAdd" ng-submit="storeAdd.$valid&&store.add()" novalidate>
+        <div class="modal-body color-black">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name" ng-model="store.storeData.name" name="name" required>
+                <span ng-show="storeAdd.name.$error.required && storeAdd.$submitted" class="error-mesage">The name is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Size (GB)</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Size" ng-model="store.storeData.size" name="size" required>
+                <span ng-show="storeAdd.size.$error.required && storeAdd.$submitted" class="error-mesage">The size is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Region</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Region" ng-model="store.storeData.region" name="region" required>
+                <span ng-show="storeAdd.region.$error.required && storeAdd.$submitted" class="error-mesage">The region is required.</span>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Size (GB)</label>
-            <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Size" ng-model="store.storeData.size">
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" ng-click="$dismiss()">Cancel</button>
+            <button type="submit" class="btn btn-primary"  value="Submit">Ok</button>
         </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Region</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Region" ng-model="store.storeData.region">
-        </div>
-    </div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-danger" ng-click="$dismiss()">Cancel</button>
-        <button type="button" class="btn btn-primary" ng-click="store.add()">Ok</button>
-    </div>
+    </form>
 </div>

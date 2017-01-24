@@ -361,7 +361,7 @@ main {
     -webkit-overflow-scrolling: touch;
 }
 
-.list-heading{
+.list-heading {
     padding-left: 21px;
 }
 
@@ -377,35 +377,38 @@ main {
     width: 30%;
 }
 
-.card .card-heading{
+.card .card-heading {
     font-size: 1.75em;
 }
 
-.card .card-detail{
+.card .card-detail {
     font-size: 1.25em;
 }
 
-@media only screen and (max-width: 960px){
-    .card{
-        width:29%;
+@media only screen and (max-width: 960px) {
+    .card {
+        width: 29%;
     }
 }
 
-@media only screen and (max-width: 740px){
-    .card{
-        width:28%;
+@media only screen and (max-width: 740px) {
+    .card {
+        width: 28%;
     }
 }
 
-@media only screen and (max-width: 600px){
-    .card{
-        width:44%;
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 44%;
     }
 }
 
-
-@media only screen and (max-width: 540px){
-    .card{
-        width:94%;
+@media only screen and (max-width: 540px) {
+    .card {
+        width: 94%;
     }
+}
+
+.error-mesage {
+    color: red;
 }
