@@ -1,8 +1,8 @@
 var dataCacheName = 'mediCloud-v1';
 var cacheName = 'mediCloud-final-v1';
 var filesToCache = [
-  '/',
-  '/index.html',
+  './',
+  './index.html',
   './lib/bootstrap.css',
   './src/styles/index.css',
   './lib/angular.min.js',
