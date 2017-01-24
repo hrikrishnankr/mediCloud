@@ -34,7 +34,7 @@
         function addStorage() {
             var modalInstance = $uibModal.open({
                 animation: true,
-                templateUrl: "../src/js/component/add-storage.html",
+                templateUrl: "./src/js/component/add-storage.html",
                 size: "sm",
                 controller: 'addStorageCtrl',
                 controllerAs: 'store'
